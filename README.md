@@ -32,9 +32,9 @@ schema.setStore('Files', {keyPath:'name'});
 // Store them by id
 schema.setStore('Elements', {keyPath:'id'});
 
-// Store definitions can be accessed with .stores.<StoreName>
-// This is like a handle for the recently defined Files store
+// Store definitions are like handles and can be accessed with .stores.<StoreName>
 // Use these handles later to access the stores they correspond to in the database
+// This is a handle for the recently defined Files store
 schema.stores.Files
 ```
 
