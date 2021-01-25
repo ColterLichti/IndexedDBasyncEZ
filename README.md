@@ -1,0 +1,2 @@
+# IndexedDBasyncEZ
+Async implementation of IndexedDB (IDBDatabase) using promises. Comes with a simple schema implementation that makes defining database and store structure much easier. Now you can use IndexedDB with out fiddling around with upgrades, requests, or transactions and while staying out of callback hell! Great for prototyping or small projects where you need some persistence and localStorage just wont do.
