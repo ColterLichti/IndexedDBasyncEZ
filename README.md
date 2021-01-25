@@ -59,3 +59,5 @@ async function start(){
   // Especially if you are going to try and access the db right after initialization!
 }
 ```
+
+# MORE TO COME, CODE IS PRETTY MUCH DONE BUT WANT READ ME TO BE FLUSHED OUT BEFORE I PUSH!
