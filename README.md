@@ -47,9 +47,15 @@ Make sure you have created a schema and versioned it appropiately as described a
 // Creates db called "Files&Elements" in IndexedDB if it doesn't exist
 const FilesAndElementsDB = new LocalDatabase('Files&Elements');
 
-// Pass in the schema object
-// This will create all the stores and structure for the database ONLY...
-// If the version number is new or a db of that name and version doesn't exist
-// Link to db with that name and version if it does
-FilesAndElements.initialize(schema);
+async function start(){
+  // Pass in the schema object
+  // This will create all the stores and structure for the database ONLY...
+  // ...if the version number is new or a db of that name and version doesn't exist
+  // Link to db with that name and version if it does
+  await FilesAndElements.initialize(schema);
+  // You don't necesarilly have to use async/await
+  // All db functions return a promise, feel free to use .then
+  // It's ill-advised to not use one of them...
+  // Especially if you are going to try and access the db right after initialization!
+}
 ```
